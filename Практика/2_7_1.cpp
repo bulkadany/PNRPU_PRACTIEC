@@ -1,25 +1,18 @@
-﻿#include <iostream>
+#include <iostream>
+#include <cmath>
 using namespace std;
-int n, a;
 
-
-int main()
+int main() 
 {
-	cin >> n;
-	a = sqrt(n);
-	if (a * a == n)
-	{
-		for (int i = 1; i <= a; i++)
-		{
-			for (int j = 1; j <= a; j++)
-			{
-				cout << "*";
-			}
-			cout << "\n";
+	int n;			
+	cin >> n;				
+	for(int i=0;i<sqrt(n);i++)
+	{		
+		for (int j=0; j<sqrt(n);j++)
+		{	
+			cout << "*";
 		}
+		cout << endl;			
 	}
-	else
-	{
-		cout << "Из числа N не вычисляется корень.";
-	}
+	return 0;
 }
