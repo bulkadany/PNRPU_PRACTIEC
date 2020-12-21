@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+int n;
+int maximum;
+int a;
+int main()
+{
+maximum=0;
+cout << "Введите количество элементов последовательности: ";
+cout << endl;
+cout << endl;
+cin >> n;
+for (int i=1; i<=n; i++)
+{
+    cin >> a;
+    if (a>=maximum)
+    {
+        maximum=a;
+    }
+}
+cout << "Макс. элемент массива: ";
+cout << endl;
+cout << maximum;
+return 0;
+}
