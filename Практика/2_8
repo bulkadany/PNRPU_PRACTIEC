@@ -1,0 +1,25 @@
+int n; // основание
+
+int main()
+{
+	setlocale(LC_ALL, "RUS");
+	cin >> n;
+
+	if (n <= 2)
+		cout << "Не соответствует условию задачи!";
+	else
+	{
+		int z = 1;  //кол-во звезд
+
+		while (z <= n)
+		{
+			for (int i = 1; i <= z; i++)
+			{
+				cout << "* ";
+			}
+			z++;
+			cout << endl;
+		}
+	}
+	return 0;
+}
