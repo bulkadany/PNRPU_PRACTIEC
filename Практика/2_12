@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int n, t, sum=0;
+
+int main()
+{
+	setlocale(LC_ALL, "RUS");
+	cin >> n >> t;
+	int max=t, min=t;
+	for (int i = 1; i < n; i++)
+	{
+		cin >> t;
+		if (t > max) max = t;
+		if (t < min) min = t;
+	}
+	sum = max + min;
+	cout << sum;
+	return 0;
+}
