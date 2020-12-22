@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+int v, pr;
+int main()
+{
+    pr = 1;
+    cin >> v;
+    for (int i = 1; i <= v; i++)
+    {
+        pr *= i;
+    }
+    cout << pr << endl;
+}
